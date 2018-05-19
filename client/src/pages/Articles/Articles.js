@@ -123,7 +123,7 @@ export default class Articles extends Component {
         <Row>
           <Col size="sm-10" offset='sm-1'>
             <Jumbotron>
-              <H1 className='page-header text-center'>New York Times Article Searcher</H1>
+              <H1 className='page-header text-center'>New York Times Article Portal</H1>
               <H4 className='text-center'>Search for and save articles of interest</H4>
             </Jumbotron>
             <Card>
@@ -164,7 +164,7 @@ export default class Articles extends Component {
                   <FormBtn
                     disabled={!(this.state.topic)}
                     onClick={this.handleFormSubmit}
-                    type='info'
+                    type='primary'
                     >Submit
                   </FormBtn>
                 </Form>
@@ -192,7 +192,7 @@ export default class Articles extends Component {
                         )
                       )
                     }
-                      <FormBtn type='warning' additional='btn-block' onClick={this.getMoreResults}>Get more results</FormBtn>
+                      <FormBtn type='success' additional='btn-block' onClick={this.getMoreResults}>Get more results</FormBtn>
                   </CardBody>
                 </Card>
               ) : ''
