@@ -124,7 +124,7 @@ export default class Articles extends Component {
           <Col size="sm-10" offset='sm-1'>
             <Jumbotron>
               <H1 className='page-header text-center'>New York Times Article Portal</H1>
-              <H4 className='text-center'>Search for and save articles of interest</H4>
+              <H4 className='text-center'>Find your articles of interest below</H4>
             </Jumbotron>
             <Card>
               <CardHeading>
