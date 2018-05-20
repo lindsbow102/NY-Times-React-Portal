@@ -18,9 +18,6 @@ export default class SavedArticles extends Component {
 
   //function that queries the API server and retrieves saved articles
   loadArticles = () => {
-    //const keys = Object.keys(JSON); // eg: json = {a: 1, b: 2}
-    //const savedArticles = keys.map(key => JSON[key]); // eg: data = [1, 2]
-    //this.setState ({ savedArticles: [...savedArticles]});
     API.getArticles().then(results => {
       this.setState({ savedArticles: [...results.data] });
     });
