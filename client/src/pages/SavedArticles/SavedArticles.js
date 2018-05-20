@@ -22,7 +22,7 @@ export default class SavedArticles extends Component {
     API
       .getArticles()
       .then(results => {
-        this.setState({savedArticles: results.data})
+        this.setState({savedArticles: [...results.data]})
       })
   };
 
