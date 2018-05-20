@@ -2,7 +2,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-color:#6495ED;
+    background: linear-gradient(62deg,#008080, #00FA9A);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 
   .col-sm-10 {
@@ -12,11 +14,6 @@ body {
   .jumbotron {
     height: 0;
   }
-  
-  /*.navbar-nav {
-    flex-direction: row;
-    background-color: #444;
-  }*/
 
   .navbar {
     background-color: #444;
@@ -27,6 +24,6 @@ body {
       background-color: #444;
   }
   
-  .btn-warning {
-    margin-bottom: 200px;
+  .btn-success {
+    margin-bottom: 50px;
   }

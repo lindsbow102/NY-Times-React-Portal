@@ -123,12 +123,12 @@ export default class Articles extends Component {
         <Row>
           <Col size="sm-10" offset='sm-1'>
             <Jumbotron>
-              <H1 className='page-header text-center'>New York Times Article Portal</H1>
+              <H1 style={{fontFamily: "Arial Black"}} className='page-header text-center'>New York Times Article Portal</H1>
               <H4 className='text-center'>Find your articles of interest below</H4>
             </Jumbotron>
             <Card>
-              <CardHeading>
-                <H3>Search</H3>
+              <CardHeading style={{backgroundColor: "#888"}}>
+                <H3 style={{fontFamily: "Arial", color: "white"}}>Search</H3>
               </CardHeading>
               <CardBody>
                 <Form style={{marginBottom: '30px'}}>
@@ -174,8 +174,8 @@ export default class Articles extends Component {
               (<H1>No results Found.  Please try again</H1>) :
               this.state.results.length>0 ? (
                 <Card>
-                  <CardHeading>
-                    <H3>Results</H3>
+                  <CardHeading style={{backgroundColor: "#888"}}>
+                    <H3 style={{fontFamily: "Arial", color: "white"}}>Results</H3>
                   </CardHeading>
                   <CardBody>
                     {
