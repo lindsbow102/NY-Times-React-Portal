@@ -124,6 +124,7 @@ export default class Articles extends Component {
           <Col size="sm-10" offset='sm-1'>
             <Jumbotron>
               <H1 style={{fontFamily: "Arial Black"}} className='page-header text-center'>New York Times Article Portal</H1>
+              <hr style={{width: '60%'}}/>
               <H4 className='text-center'>Find your articles of interest below</H4>
             </Jumbotron>
             <Card>

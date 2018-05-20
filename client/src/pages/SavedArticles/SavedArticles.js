@@ -45,12 +45,12 @@ export default class SavedArticles extends Component {
         <Row>
           <Col size="sm-10" offset='sm-1'>
             <Jumbotron>
-              <H1 className="text-center">Saved New York Times Articles</H1>
+              <H1 style={{fontFamily: "Arial Black"}} className="text-center">Saved New York Times Articles</H1>
               <hr style={{width: '60%'}}/>
             </Jumbotron>
             <Card>
-              <CardHeading>
-                <H3>Saved Articles</H3>
+              <CardHeading style={{backgroundColor: "#888"}}>
+                <H3 style={{fontFamily: "Arial", color: "white"}}>Saved Articles</H3>
               </CardHeading>
               <CardBody>
                 { this.state.savedArticles.length > 0 ?
