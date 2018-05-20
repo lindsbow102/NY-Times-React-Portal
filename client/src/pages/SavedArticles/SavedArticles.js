@@ -59,7 +59,7 @@ export default class SavedArticles extends Component {
               </CardHeading>
               <CardBody>
                 {this.state.savedArticles.length > 0 ? (
-                  this.setState.savedArticles.map((article, i) => (
+                  this.state.savedArticles.map((article, i) => (
                     <Article
                       key={i}
                       title={article.title}
