@@ -19,6 +19,10 @@ export default class Articles extends Component {
     noResults: false,//boolean used as flag for conditional rendering
   };
 
+  // componentDidMount() {
+  //   this.saveArticle();
+  // }
+
 
   //function to save an article
   saveArticle = (article) => {
@@ -30,10 +34,13 @@ export default class Articles extends Component {
       summary: article.snippet
     }
 
+    // console.log('about to save article', JSON.stringify(article));
+
     //calling the API
     API
       .saveArticle(newArticle)
-      .then(results => {
+      .then(() => {
+        // console.log("results before filter", JSON.stringify(this.state.results));
         //removing the saved article from the results in state
         let unsavedArticles = this.state.results.filter(article => article.headline.main !== newArticle.title)
         this.setState({results: unsavedArticles})
@@ -84,7 +91,7 @@ export default class Articles extends Component {
       queryUrl+= `&end_date=${eYear}`
     }
     queryUrl+=key;
-
+    
     //calling the API
     API
       .queryNYT(queryUrl)
@@ -189,6 +196,7 @@ export default class Articles extends Component {
                             date={article.pub_date}
                             type='Save'
                             onClick={() => this.saveArticle(article)}
+                            // handleClick={this.saveArticle}
                           />
                         )
                       )

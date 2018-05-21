@@ -16,7 +16,7 @@ app.use(logger('combined'))
 // serve up static assets
 app.use(express.static(path.join(__dirname, "client/build")));
 // set up routes
-//app.use(routes);
+app.use(routes);
 
 // Set up promises with mongoose
 mongoose.Promise = global.Promise;

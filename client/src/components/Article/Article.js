@@ -23,3 +23,5 @@ export const Article = props => (
     </ListItem>
   </div>
 )
+
+export default Article;

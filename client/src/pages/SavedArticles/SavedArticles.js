@@ -12,7 +12,11 @@ export default class SavedArticles extends Component {
   };
 
   //initial loading of saved articles
-  componentWillMount() {
+  // componentWillMount() {
+  //   this.loadArticles();
+  // }
+
+  componentDidMount() {
     this.loadArticles();
   }
 
